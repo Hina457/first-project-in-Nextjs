@@ -1,27 +1,122 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+.mainbox{
+  background-color:slategray;
+  width:100%;
+  height:70px;
+}
+.mainbox ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+.mainbox ul li a{
+  text-decoration: none;
+  color: azure;
+  text-transform: uppercase
+ }
+
+ .mainbox ul li a{
+  text-decoration: none;
+  color: azure;
+  text-transform: uppercase
+ }
+ .mainbox{
+  margin:auto;
+  padding:15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.mainbox ul li a:hover{
+  background-color:black;
+ }
+
+ .mainbox h1{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+ }
+ .mainbox h1:hover{
+ color: wheat;
+ }
+ h2{
+  text-align: center;
+ font-family: fantasy;
+ color: brown;
+ font-size: 50px;
+ }
+ h2:hover{
+  color:steelblue;
+ }
+
+
+.figer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--clr);
+}
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .box{
+position: relative;
+width: 250px;
+height: 200px;
+margin: 30px;
+background:#008cff ;
+font-size: 2em;
+display: flex;
+justify-content: center;
+align-items: center;
+color: rgb(14, 14, 13);
+border-radius: 15px;
+  
+}
+.container .box.shadow1{
+  box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+             15px 15px 15px  rgba(0,0,0, 0.1);
+          
+}       
+
+.container .box.shadow2{
+  box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+  15px 15px 15px  rgba(0,0,0, 0.1);
+          
+}   
+
+.container .box.shadow3{
+  box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+  15px 15px 15px  rgba(0,0,0, 0.1);
+          
+}   
+.container .box.shadow4{
+  box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+  15px 15px 15px  rgba(0,0,0, 0.1);
+          
+}   
+.container .shadow1 h3{
+  font-size: 20px;
+  text-align: center;
+  padding-bottom:5%;
+}
+.Image{
+  width:1800px;
+ 
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.structure{
+  width:1600px;
+  height:600px;
+  background-color:silver;
+  padding-top: 20px;
 }
